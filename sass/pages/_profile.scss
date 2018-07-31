@@ -1,0 +1,134 @@
+.profile {
+  margin-top: 4rem;
+  @include card(2rem);
+  width: 100%;
+  text-align: center;
+  &.-brand {
+    .brand-url {
+      margin-top: 0.5rem;
+      display: inline-block;
+      &:hover {
+        color: $wav-blue;
+      }
+    }
+    .network-count {
+      display: block;
+      color: $wav-text-300;
+    }
+    .network-options {
+      display: none; // flex
+      justify-content: center;
+      align-content: center;
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+    .autoshare {
+      margin-top: 0.6rem;
+      padding: 1rem;
+      color: $wav-text-300;
+      align-self: center;
+    }
+  }
+  .avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+  .name {
+    display: block;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: $wav-text-300;
+  }
+  .email {
+    margin-top: 0.5rem;
+    display: inline-block;
+  }
+}
+.profile-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  @include mobile {
+    flex-direction: column;
+  }
+  .earnings {
+    @include card(2rem);
+    width: 49%;
+    text-align: center;
+    @include mobile {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .title {
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .amount {
+      font-size: 2rem;
+      padding-left: 30px;
+      background: url(../images/wave-coin@2x.png) no-repeat left;
+      background-size: 24px 24px;
+      color: $wav-text-300;
+    }
+  }
+  .score {
+    @extend .earnings;
+    .points {
+      font-size: 2rem;
+      color: $wav-text-300;
+    }
+  }
+}
+.social-accounts {
+  @include card(2rem);
+  margin-top: 2rem;
+  .header {
+    text-align: center;
+  }
+  .accounts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include mobile {
+      flex-direction: column;
+    }
+    .account {
+      cursor: pointer;
+      border: 1px solid $light-grey-100;
+      border-radius: 5px;
+      width: 30%;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}
+.my-brands {
+  @include card(2rem);
+  margin-top: 2rem;
+  width: 50%;
+  @include mobile {
+    width: 100%;
+  }
+  .brands-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    .brand {
+      border: 1px solid $light-grey-100;
+      border-radius: 5px;
+      width: 100%;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+  }
+}

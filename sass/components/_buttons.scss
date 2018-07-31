@@ -1,0 +1,63 @@
+.btn {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  line-height: 3rem;
+  display: inline-block;
+  margin-top: 1rem;
+  position: relative;
+  padding: 0 2rem;
+  background: $wav-gradient;
+  transition: all 200ms ease-in-out;
+  &.-alt {
+    background: none;
+    color: $wav-text-200;
+    &:hover {
+      color: $wav-purple;
+    }
+  }
+  &.-inverse {
+    background: none;
+    border: 1px solid $wav-purple;
+    color: $wav-purple;
+    &:hover {
+      color: $wav-pink;
+      border-color: $wav-pink;
+    }
+  }
+  &.-full {
+    width: 100%;
+  }
+  &:hover {
+    color: white;
+    transform: translateY(-3px);
+  }
+}
+
+.toggle {
+  width: 2.2rem;
+  height: 1.2rem;
+  border-radius: 2rem;
+  background: $light-grey-200;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  .switch {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    top: 0.1rem;
+    left: 0.1rem;
+    background: white;
+    transition: all 200ms ease-out;
+  }
+  &.active {
+    background: $wav-gradient;
+    .switch {
+      left: 1.1rem;
+    }
+  }
+}

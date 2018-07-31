@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Influencer Wave</title>
+</head>
+
+<body>
+    
+    <section class="modal task-modal" id="modal">
+        <div id="share-options" class="pop-up visible">
+            
+            <div class="task">                
+                <div class="task-header">
+                    <div class="brand">
+                        <img src="https://source.unsplash.com/random/30x30" alt="" class="avatar">
+                        <span class="name">Knorr</span>                        
+                    </div>
+
+                    <div class="brand-description">
+                        <img src="https://source.unsplash.com/random/300x150" alt="" class="cover-image">
+                        <div class="reward-info">
+                            <span class="pool">3456 WAV</span>
+                            <span class="time">4 days left</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-body">
+                    <div class="header">
+                        Campaign Summary
+                    </div>
+                    <div class="body">
+                        Please go to the minute 7 on the video to hear the 3 minute pitch by Tom Cousel. Our vision is to allow every user to own
+                        data when utilizing any social media application, blocking access from companies wanting to exploit data to make money       
+                    </div>
+                </div>
+
+                <div class="task-todo">
+                    <div class="header">Tasks</div>
+                    <ul class="body">
+                        <li class="task">
+                            <div>
+                                <input type="checkbox" value="1" id="checkboxOneInput" name="" />                            
+                            </div>
+                            <div class="todo">
+                                The internet is neither private nor safe for users. If knowledge is power, then big corporates like facebook have all the power and its not fair !
+                                They monopolize the space and it's really hard to move people to alternatives
+                            </div>
+                        </li>
+                        <li class="task">
+                            <div>
+                                <input type="checkbox" value="1" id="checkboxOneInput" name="" />
+                            </div>
+                            <div class="todo">
+                                They monopolize the space and it's really hard to move people to alternatives They monopolize the space and it's really hard to move people to alternatives 
+                                They monopolize the space and it's really hard to move people to alternatives
+                            </div>
+                        </li>
+                        <li class="task">
+                            <div>
+                                <input type="checkbox" value="1" id="checkboxOneInput" name="" class="todo-mark" />
+                            </div>
+                            <div class="todo">
+                                Enter Mydata... We built plugin you can install and everything you share on FB (or any other social network will be owned by the user end-to-end encrypted) 
+                                They monopolize the space and it's really hard to move people to alternatives
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="task-feedback">
+                    <div class="header">Feedback</div>
+                    <div class="body">
+                        <textarea name="feedback" id="feedback" cols="30" rows="3" placeholder="Enter url or comment"></textarea>
+                    </div>
+                </div>
+
+                <div class="task-feebback-upload" onclick="getFile()">
+                    <div class="task-feebback-icon"><i class="fa fa-cloud-upload fa-3x" aria-hidden="true"></i></div>
+                    <div>Upload proof</div>
+
+                    <div style='height: 0px;width:0px; overflow:hidden;'><input id="upfile" type="file" value="upload"/></div>
+                </div>
+                
+                <div>
+                    <a href="#" class="btn -full earn-btn">
+                        <i class="fa fa-check"></i> Mark all as done
+                    </a>                
+                </div>
+            </div>
+
+            <a href="#" class="btn -alt -right close-modal" id="close-modal">Cancel</a>
+        </div>
+    </section>
+
+    <section class="mobile-filter" id="mobile-categories">
+        <a href="#" class="close" id="close-filter">close &nbsp;
+            <i class="fas fa-times"></i>
+        </a>
+        <h3>Campaign Categories</h3>
+        <div class="container categories">
+            <a href="#" class="category active">Fashion</a>
+            <a href="#" class="category">Music</a>
+            <a href="#" class="category">Technology</a>
+            <a href="#" class="category">News</a>
+            <a href="#" class="category">Food</a>
+            <a href="#" class="category active">Sports</a>
+            <a href="#" class="category">Animation</a>
+            <a href="#" class="category active">Fashion</a>
+            <a href="#" class="category">Music</a>
+            <a href="#" class="category">Technology</a>
+            <a href="#" class="category">News</a>
+            <a href="#" class="category">Food</a>
+            <a href="#" class="category active">Sports</a>
+            <a href="#" class="category">Animation</a>
+        </div>
+    </section>
+
+    <nav class="nav-bar">
+        <a href="index.html">
+            <img src="images/logo-icon.png" class="logo" alt="">
+        </a>
+        <a href="#" class="filter" id="filter-btn">
+            <span>Campaigns</span>
+            <i class="fas fa-caret-down"></i>
+        </a>
+
+        <div href="#" class="user-info" id="user-btn">
+            <img src="images/avatar.png" class="avatar" alt="">
+            <div class="name">
+                <span>Abel Ekele</span>
+                <i class="fas fa-caret-down"></i>
+            </div>
+            <ul class="user-menu" id="user-menu">
+                <li class="menu-item">
+                    <a href="profile.html">
+                        <i class="fas fa-user-circle"></i> &nbsp; Profile
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="wallet.html">
+                        <i class="fas fa-wallet"></i> &nbsp; Wallet
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i> &nbsp; Log Out
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container campaign">
+
+        <aside class="cat-container">
+            <div class="categories">
+                <span>Categories</span>
+                <ul class="side-menu">
+                    <li class="category">
+                        <a href="#" class="active">
+                            <span>Art</span>
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </li>
+                    <li class="category">
+                        <a href="#" class="active">
+                            <span>Technology</span>
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </li>
+                    <li class="category">
+                        <a href="#">
+                            <span>Music</span>
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </li>
+                    <li class="category">
+                        <a href="#">
+                            <span>Fashion</span>
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </li>
+                    <li class="category">
+                        <a href="#">
+                            <span>Health</span>
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </li>
+                    <li class="category">
+                        <a href="#">
+                            <span>Blogging</span>
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </li>
+                    <li class="category">
+                        <a href="#">
+                            <span>News</span>
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="rewards">
+
+            <div class="reward">
+                
+                <a href="brand.html" class="brand task-brand">
+                    <div class="reward-header reward-logo">
+                        <img src="https://source.unsplash.com/random/30x30" alt="" class="avatar">
+                        <span class="name">Knorr</span>                        
+                    </div>
+                    <div class="reward-header task-type">
+                        <span class="name task-name">Task</span>                        
+                    </div>
+                </a>
+
+                <div class="reward-card">
+                    <img src="https://source.unsplash.com/random/300x150" alt="" class="cover-image">
+                    <div class="details">
+                        <div class="reward-info">
+                            <span class="pool">3456 WAV</span>
+                            <span class="time">4h ago</span>
+                        </div>
+                        <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="link">www.atlanta.com</a>
+                        <a href="#" class="btn -full earn-btn">Participate</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reward">
+
+                <a href="brand.html" class="brand task-brand">
+                    <div class="reward-header reward-logo">
+                        <img src="https://source.unsplash.com/random/30x30" alt="" class="avatar">
+                        <span class="name">Knorr</span>                        
+                    </div>
+                    <div class="reward-header task-type">
+                        <span class="name task-name">Task</span>                        
+                    </div>
+                </a>
+
+                <div class="reward-card">
+                    <img src="https://source.unsplash.com/random/300x150" alt="" class="cover-image">
+                    <div class="details">
+                        <div class="reward-info">
+                            <span class="pool">3456 WAV</span>
+                            <span class="time">4h ago</span>
+                        </div>
+                        <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusamus rerum illo numquam sint.</p>
+                        <a href="#" class="link">www.atlanta.com</a>
+                        <a href="#" class="btn -full earn-btn">Participate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="reward">
+
+                <a href="brand.html" class="brand task-brand">
+                    <div class="reward-header reward-logo">
+                        <img src="https://source.unsplash.com/random/30x30" alt="" class="avatar">
+                        <span class="name">Knorr</span>                        
+                    </div>
+                    <div class="reward-header task-type">
+                        <span class="name task-name">Task</span>                        
+                    </div>
+                </a>
+
+                <div class="reward-card">
+                    <img src="https://source.unsplash.com/random/300x150" alt="" class="cover-image">
+                    <div class="details">
+                        <div class="reward-info">
+                            <span class="pool">3456 WAV</span>
+                            <span class="time">4h ago</span>
+                        </div>
+                        <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusamus rerum illo numquam sint.</p>
+                        <a href="#" class="link">www.atlanta.com</a>
+                        <a href="#" class="btn -full earn-btn">Participate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="reward">
+
+                <a href="brand.html" class="brand task-brand">
+                    <div class="reward-header reward-logo">
+                        <img src="https://source.unsplash.com/random/30x30" alt="" class="avatar">
+                        <span class="name">Knorr</span>                        
+                    </div>
+                    <div class="reward-header task-type">
+                        <span class="name task-name">Task</span>                        
+                    </div>
+                </a>
+
+                <div class="reward-card">
+                    <img src="https://source.unsplash.com/random/300x150" alt="" class="cover-image">
+                    <div class="details">
+                        <div class="reward-info">
+                            <span class="pool">3456 WAV</span>
+                            <span class="time">4h ago</span>
+                        </div>
+                        <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="link">www.atlanta.com</a>
+                        <a href="#" class="btn -full earn-btn">Participate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+    <script>
+        let toggleButtons = document.querySelectorAll('.toggle');
+
+        toggleButtons.forEach(function (toggleBtn) {
+            toggleBtn.addEventListener('click', function () {
+                this.classList.toggle('active');
+            });
+        });
+
+        const getFile = () => {
+            document.getElementById("upfile").click();
+        }
+    </script>
+</body>
+
+</html>

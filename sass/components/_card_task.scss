@@ -1,0 +1,171 @@
+.task-brand {
+	display: flex;
+}
+.reward-logo {
+	margin-right: auto;
+}
+.reward-header {
+	display: flex;
+}
+.task-type {
+	padding: 2.5px 25px;
+	color: white;
+	background: $wav-gradient;
+  	border-radius: 5px;	
+}
+.task-modal {
+	overflow-y: auto;
+}
+.task-header {
+	.brand {
+	    display: flex;
+	    justify-content: flex-start;
+	    margin-bottom: 5px;
+	    .avatar {
+	      border-radius: 50%;
+	      border: 3px white solid;
+	    }
+	    .name {
+	      align-self: center;
+	      padding: 0 5px;
+	    }
+	  }
+	 .reward-info {
+	 	display: flex;
+		font-size: 0.8rem;
+		display: flex;
+		justify-content: space-between;
+	 	.pool {
+	 		margin-right: auto;
+			padding: 2px 0 2px 20px;
+			background: url(../images/wave-coin@2x.png) no-repeat left;
+			background-size: 16px 16px;
+	 	}
+	 }
+
+	 .brand-description {
+	 	img {
+	 		width: 100%;
+	 	}
+	 }
+}
+.task-body, 
+.task-todo,
+.task-feedback {
+	margin-top: 25px;
+
+	.header {
+		font-size: 1.2rem;
+	}
+}
+.task-todo {
+	ul.body {
+		padding-left: 0;
+		list-style-type: none;
+	}
+	.task {
+		display: flex;
+		padding: 0;
+		margin-bottom: 25px;
+	}
+	.todo {
+		margin-left: 10px;
+	}
+}
+.task-feedback {
+	margin-bottom: 10px;
+}
+.task-feedback textarea {
+	width: 100%;
+	border-radius: 5px;	
+	padding: 0.5rem 1rem;
+	border: 1px solid $light-grey-200;
+}
+.task-feedback .body {
+	margin-top: 15px;
+}
+.task-feebback-upload {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 0;
+	border-radius: 5px;	
+	border: 1px solid $light-grey-200;
+}
+.task-feebback-icon {
+	margin-right: 25px;
+}
+
+.my-tasks {
+  padding-top: 9rem;
+  padding-bottom: 3rem;
+  width: 80%;
+  height: auto;
+
+  height: 100vh;
+  padding-right: 4rem;
+  overflow: scroll; 
+}
+@media (max-width: 768px) {
+	.my-tasks {
+		width: 100%;
+		height: auto;
+		padding-top: 5rem;
+		padding-right: 0;
+	} 
+}
+.my-task {
+	margin: 15px 0;
+	border-bottom: 1px solid $light-grey-200;
+
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+.task-logo {
+	margin-top: 0;
+	margin-right: 10px;
+}
+.task-body {
+	margin-top: 0;
+}
+.task-body-header {
+	display: flex;
+}
+.task-body-icon {
+	padding: 5px;
+	border-radius: 50%;
+	background: $wav-gradient;
+	color: white;
+
+	margin-right: 10px;
+}
+.task-body-content {
+	margin-bottom: 5px;
+	color: #424242;
+}
+.task-body-footer {
+	display: flex;
+	width: 100%;
+	margin-top: 10px;
+	justify-content: space-between;
+}
+.task-logo .avatar {
+  border-radius: 50%;
+  border: 3px white solid; 
+}
+
+.task-body-footer {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.task-body-footer .pool {
+    padding: 2px 0 2px 20px;
+    background: url(../images/wave-coin@2x.png) no-repeat left;
+    background-size: 16px 16px; 
+}

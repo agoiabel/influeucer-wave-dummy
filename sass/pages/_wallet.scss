@@ -1,0 +1,76 @@
+.balance {
+  margin-top: 4rem;
+  @include card(2rem);
+  width: 100%;
+  text-align: center;
+  .title {
+    display: block;
+  }
+  .amount {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: $wav-text-300;
+    padding-left: 30px;
+    background: url(../images/wave-coin@2x.png) no-repeat left;
+    background-size: 24px 24px;
+  }
+  .btn {
+    display: inline-block;
+    width: auto;
+    padding: 0 2rem;
+  }
+}
+.wallets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include mobile {
+    flex-direction: column;
+  }
+  .wallet {
+    @include card(2rem);
+    width: 49%;
+    margin-bottom: 4rem;
+    @include mobile {
+      width: 100%;
+      margin-top: 1rem;
+    }
+    .title {
+      i {
+        color: $wav-purple;
+      }
+    }
+    .address {
+      color: $wav-text-300;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid $light-grey-100;
+      @include mobile {
+        font-size: 0.8rem;
+      }
+    }
+    .delete-btn {
+      float: right;
+      text-align: right;
+      font-size: 0.8rem;
+      padding-top: 0.5rem;
+      &:hover {
+        color: $wav-pink;
+      }
+    }
+  }
+}
+.my-wallet {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .header {
+    margin-top: 4rem;
+  }
+
+  .add-btn {
+    margin: 2rem auto;
+  }
+}

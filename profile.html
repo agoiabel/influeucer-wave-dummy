@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <title>Influencer Wave</title>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <a href="index.html">
+            <img src="images/logo-icon.png" class="logo" alt="">
+        </a>
+        <a href="#" class="filter">
+            <span>Profile</span>
+        </a>
+        <div href="#" class="user-info" id="user-btn">
+            <img src="images/avatar.png" class="avatar" alt="">
+            <div class="name">
+                <span>Abel Ekele</span>
+                <i class="fas fa-caret-down"></i>
+            </div>
+            <ul class="user-menu" id="user-menu">
+                <li class="menu-item">
+                    <a href="profile.html">
+                        <i class="fas fa-user-circle"></i> &nbsp; Profile
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="wallet.html">
+                        <i class="fas fa-wallet"></i> &nbsp; Wallet
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i> &nbsp; Log Out
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container">
+        <div class="profile">
+            <img src="images/avatar.png" alt="picture" class="avatar">
+            <span class="name">Abel Ekele</span>
+            <span class="email">abel.ekele@gmail.com</span>
+        </div>
+        <div class="profile-info">
+            <div class="earnings">
+                <span class="title">Wave Coins Earned</span>
+                <span class="amount">324567331</span>
+            </div>
+            <div class="score">
+                <span class="title">Engagement Score</span>
+                <div class="points">4.2</div>
+            </div>
+        </div>
+        <div class="social-accounts">
+            <h3>Connect Social Accounts</h3>
+            <div class="accounts">
+                <div class="account" id="social-account">
+                    <span class="name">
+                        <i class="fab fa-facebook-square"></i> &nbsp; Facebook
+                    </span>
+                    <div class="toggle active">
+                        <div class="switch"></div>
+                    </div>
+                </div>
+                <div class="account" id="social-account">
+                    <span class="name">
+                        <i class="fab fa-twitter-square"></i> &nbsp; Twitter
+                    </span>
+                    <div class="toggle active">
+                        <div class="switch"></div>
+                    </div>
+                </div>
+                <div class="account" id="social-account">
+                    <span class="name">
+                        <i class="fab fa-instagram"></i> &nbsp; Instagram
+                    </span>
+                    <div class="toggle">
+                        <div class="switch"></div>
+                    </div>
+                </div>
+                <div class="account" id="social-account">
+                    <span class="name">
+                        <i class="fab fa-telegram"></i> &nbsp; Telegram
+                    </span>
+                    <div class="toggle">
+                        <div class="switch"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-brands">
+            <h3>Autoshare Brands</h3>
+            <ul class="brands-list">
+                <li class="brand">
+                    <a href="brand.html" class="name">Knorr Nigeria</a>
+                    <div class="toggle active">
+                        <div class="switch"></div>
+                    </div>
+                </li>
+                <li class="brand">
+                    <a href="brand.html" class="name">Knorr Nigeria</a>
+                    <div class="toggle active">
+                        <div class="switch"></div>
+                    </div>
+                </li>
+                <li class="brand">
+                    <a href="brand.html" class="name">Knorr Nigeria</a>
+                    <div class="toggle active">
+                        <div class="switch"></div>
+                    </div>
+                </li>
+                <li class="brand">
+                    <a href="brand.html" class="name">Knorr Nigeria</a>
+                    <div class="toggle active">
+                        <div class="switch"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+    <script>
+        let toggleButtons = document.querySelectorAll('.toggle');
+
+        toggleButtons.forEach(function (toggleBtn) {
+            toggleBtn.addEventListener('click', function () {
+                this.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

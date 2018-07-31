@@ -1,0 +1,23 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+a {
+  text-decoration: none;
+  color: $wav-text-200;
+  &:hover {
+    color: $wav-text-300;
+  }
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  background: $light-grey-100;
+  font-size: 62.5%;
+  font-size: 1rem;
+  line-height: 1.682rem;
+  color: $wav-text-200;
+}

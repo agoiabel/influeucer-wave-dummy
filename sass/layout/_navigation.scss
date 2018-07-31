@@ -1,0 +1,69 @@
+.nav-bar {
+  width: 100%;
+  background: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+  .logo {
+    width: 40px;
+  }
+  .filter {
+    align-self: center;
+    display: none;
+    @include mobile {
+      display: inline-block;
+    }
+  }
+  .user-info {
+    display: flex;
+    align-self: center;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      color: $wav-text-300;
+    }
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
+    .name {
+      align-self: center;
+      @include mobile {
+        display: none;
+      }
+      span {
+        padding-right: 1rem;
+      }
+    }
+    .user-menu {
+      @include card(1rem);
+      list-style: none;
+      position: absolute;
+      width: 10rem;
+      top: 2rem;
+      right: 0rem;
+      display: none;
+      &.show {
+        display: block;
+      }
+
+      .menu-item {
+        padding: 0.5rem 1rem;
+        display: inline-block;
+        &:hover {
+          i {
+            color: $wav-purple;
+          }
+        }
+        i {
+          color: $wav-text-100;
+        }
+      }
+    }
+  }
+}
